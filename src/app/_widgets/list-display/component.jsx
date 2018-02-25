@@ -6,7 +6,6 @@ export default class GridComponent extends Component {
     }
 
     render() {
-        console.log(this.props.listData);
         return (
             <table className="table">
                 <thead>
@@ -23,7 +22,7 @@ export default class GridComponent extends Component {
                         return (
                             <tr>
                                 <td>{item.id}</td>
-                                <td>{item.name}</td>
+                                <td><a>{item.name}</a></td>
                                 <td>{item.from}</td>
                                 <td>{item.to}</td>
                             </tr>
